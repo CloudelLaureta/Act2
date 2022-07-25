@@ -1,0 +1,36 @@
+<ion-header [translucent]="true">
+    <ion-toolbar>
+      <ion-title>
+            Login
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content [fullscreen]="true">
+    <div id="container">
+        <form>
+            <ion-item>
+                <ion-label position="floating" >Email or Username</ion-label>
+                <ion-input placeholder="Email or Username" name="username" type="text" required></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label position="floating">Password</ion-label>
+                <ion-input name="password" type="password" required></ion-input>
+            </ion-item>
+            <ion-button [routerLink]="['/success']" expand="full"> Login </ion-button>
+            <ion-item>
+                <ion-label>Forgot Password?</ion-label>
+                <ion-button [routerLink]="['/forgot']" expand="full"> Reset Password </ion-button>
+            </ion-item>
+            <ion-item>
+                <ion-label>Don't have an account yet?</ion-label>
+                <ion-button [routerLink]="['/register']" expand="full"> Register </ion-button>
+            </ion-item>
+            
+            
+            
+        </form>
+    </div>
+  </ion-content>
+
+  

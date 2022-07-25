@@ -1,0 +1,51 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+       Create New Account
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="container">
+      <form>
+        <ion-row>
+          <ion-col>
+            <ion-item>
+              <ion-label position="floating" >First Name</ion-label>
+              <ion-input placeholder="Julia" name="fname" type="text" required></ion-input>
+          </ion-item>
+          </ion-col>
+          <ion-col>
+            <ion-item>
+              <ion-label position="floating" >Middle Name</ion-label>
+              <ion-input placeholder="Maranan" name="mname" type="text" required></ion-input>
+          </ion-item>
+          </ion-col>
+          <ion-col><ion-item>
+            <ion-label position="floating" value="mname">Last Name</ion-label>
+            <ion-input placeholder="Choi" name="lname" type="text" required></ion-input>
+          </ion-item></ion-col>
+        </ion-row>
+        <ion-item>
+            <ion-label position="floating" >Email</ion-label>
+            <ion-input placeholder="choi_lia@gmail.com" name="email" type="email" required></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating" >Username</ion-label>
+          <ion-input placeholder="Itzy_Lia" name="username" type="text" required></ion-input>
+        </ion-item>
+        <ion-item>
+              <ion-label position="floating">Password</ion-label>
+              <ion-input name="password" type="password" required></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Birthdate</ion-label><br>
+          <ion-input name="bday" type="date" required></ion-input>
+      </ion-item>
+      <ion-button [routerLink]="['/success']" expand="full"> Register </ion-button>
+      <ion-button [routerLink]="['/home']" expand="full"> Home </ion-button>
+      </form>
+  </div>
+</ion-content>
+

@@ -1,0 +1,19 @@
+ion-header {
+    position: absolute;
+    text-align: center;
+}
+#container {
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+form {
+    text-align: center;
+    width:70%;
+    margin:auto;
+    border: 3px solid; 
+  }

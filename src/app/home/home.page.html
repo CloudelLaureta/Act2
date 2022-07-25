@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+       Activity 2: Sample Form
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title size="large">This is just a demo on how to create an app using ionic Framework</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <strong>Already have an acccount?</strong>
+    <ion-button [routerLink]="['/login']" expand="block"> Login </ion-button><br>
+    <strong>Don't have an account yet?</strong>
+    <ion-button [routerLink]="['/register']" expand="full"> Register </ion-button>
+
+      </div>
+</ion-content>
+
+<ion-footer [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+       Note: This don't have backend connected and is use to display the frontend only
+    </ion-title>
+  </ion-toolbar>
+</ion-footer>

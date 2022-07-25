@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+          Reset Password
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="container">
+      <form>
+          <ion-item>
+              <ion-label position="floating" >Email</ion-label>
+              <ion-input placeholder="Email" name="username" type="text" required></ion-input>
+          </ion-item>
+            <ion-button  [routerLink]="['/linksent']" expand="full"> Send a reset link</ion-button>
+            <ion-button [routerLink]="['/home']" expand="full"> Home </ion-button>
+      </form>
+  </div>
+</ion-content>
+
