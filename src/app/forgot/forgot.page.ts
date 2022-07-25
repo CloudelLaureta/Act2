@@ -11,9 +11,10 @@ export class ForgotPage{
   roleMessage = '';
 
   constructor(private alertController: AlertController) {}
-  async reset(){
+  async resetpassword(){
     const alert = await this.alertController.create({
-      header: 'REST LINK SENT',
+      header: 'RESET LINK SENT',
+      message: 'Open your email and click the link sent to you to reset ypur passsword',
       buttons: [
         {
           text: 'OK',
