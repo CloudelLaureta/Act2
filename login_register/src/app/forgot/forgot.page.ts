@@ -52,16 +52,5 @@ export class ForgotPage implements OnInit{
     await alert.present();
   }
 
-
- // async reset(){
-  //  const auth = getAuth();
-    //sendPasswordResetEmail(auth,this.email)
-    //.then(() => {})
-    //.catch((error) => {
-      //const errorCode = error.code;
-      //const errorMessage = error.message;
-  //  });
-  //}
-
   }
 
